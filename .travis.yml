@@ -13,6 +13,8 @@ language: generic
 
 os:
   - linux-ppc64le
+    sudo: required
+    dist: xenial
   - osx
 
 osx_image: xcode6.4
