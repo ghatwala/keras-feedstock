@@ -10,10 +10,10 @@ matrix:
       sudo: false       # deploy on workers with docker backend
     - os: osx
       osx_image: xcode6.4
-env:
-  - CONDA_PY=27
-  - CONDA_PY=35
-  - CONDA_PY=36
+  env:
+    - CONDA_PY=27
+    - CONDA_PY=35
+    - CONDA_PY=36
     
 
 #os:
