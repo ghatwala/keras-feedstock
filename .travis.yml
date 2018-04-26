@@ -7,7 +7,7 @@ os:
   - linux-ppc64le
   - osx
 dist: xenial      # power jobs only on ubuntu-xenial distribution
-sudo: false       # deploy on workers with docker backend
+sudo: required       # deploy on workers with docker backend
 
 osx_image: xcode6.4
 
