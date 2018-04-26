@@ -7,6 +7,7 @@ env:
     - CONDA_PY=27
     - CONDA_PY=35
     - CONDA_PY=36
+  matrix:
     include:
       - os: linux-ppc64le # power queue name
             dist: xenial      # power jobs only on ubuntu-xenial distribution
