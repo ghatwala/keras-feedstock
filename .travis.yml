@@ -3,31 +3,19 @@
 
 language: generic
 
-matrix:
-  include:
-    - os: linux-ppc64le # power queue name
-      dist: xenial      # power jobs only on ubuntu-xenial distribution
-      sudo: false       # deploy on workers with docker backend
-      env:
-        matrix:
-          - CONDA_PY=27
-          - CONDA_PY=35
-          - CONDA_PY=36
-    - os: osx
-      osx_image: xcode6.4
+os:
+  - linux-ppc64le
+  - osx
+dist: xenial      # power jobs only on ubuntu-xenial distribution
+sudo: false       # deploy on workers with docker backend
 
-   
-#os:
-#  - linux-ppc64le
-#  - osx
+osx_image: xcode6.4
 
-#osx_image: xcode6.4
-
-#env:
-#  matrix:
-#    - CONDA_PY=27
-#    - CONDA_PY=35
-#    - CONDA_PY=36
+env:
+  matrix:
+    - CONDA_PY=27
+    - CONDA_PY=35
+    - CONDA_PY=36
 
 
 before_install:
